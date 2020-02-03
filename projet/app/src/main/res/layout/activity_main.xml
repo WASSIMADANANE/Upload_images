@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/LoginTxt"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="LOGIN"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/PassTxt"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/BtnConn"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Se Connecter"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/membre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous n'êtes pas un membre ?"
+            android:clickable="true"
+            android:autoLink="all"
+            android:layout_marginTop="70dp"/>
+
+    </LinearLayout>
+</LinearLayout>
